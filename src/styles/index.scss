@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter.ttf');
+}
+
+svg {
+  transform: rotate(-30deg);
+}
+
+.pink:hover {
+  fill: #cc5490;
+}
+
+.grey:hover {
+  fill: #b4b4b4;
+}
+
+.green:hover {
+  fill: #81a129;
+}
