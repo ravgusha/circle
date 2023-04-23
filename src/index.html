@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>Pie chart</title>
+  </head>
+
+  <body>
+    <div id="root" class="wrapper">
+      <svg
+        id="pie"
+        class="pie"
+        version="1.1"
+        style="font-family: Roboto; font-size: 12px"
+        xmlns="http://www.w3.org/2000/svg"
+        width="558"
+        height="558"
+        transform="rotate(-25)"
+        viewBox="0 0 558 558"
+        aria-hidden="false"
+        aria-label="Interactive chart"
+      >
+        <g data-z-index="3" aria-hidden="false">
+          <g
+            data-z-index="0.1"
+            opacity="1"
+            transform="translate(10,10) scale(1 1)"
+            style="cursor: pointer"
+            aria-hidden="false"
+            clip-path="none"
+          >
+            <path
+              class="pink"
+              fill="hotpink"
+              d="M 268.9477578232522 10.000005320165826 A 256.5 256.5 0 0 1 501.61216584977984 374.5917679505452 L 269 266.5 A 0 0 0 0 0 269 266.5 Z"
+            ></path>
+            <path
+              class="grey"
+              fill="#d9d9d9"
+              d="M 501.50395779377135 374.82432603174686 A 256.5 256.5 0 0 1 122.85869209561312 477.29603441240346 L 269 266.5 A 0 0 0 0 0 269 266.5 Z"
+            ></path>
+            <path
+              class="green"
+              fill="#97bb31"
+              d="M 122.64796916698126 477.14978773084755 A 256.5 256.5 0 0 1 268.6437266458846 10.000247428389969 L 269 266.5 A 0 0 0 0 0 269 266.5 Z"
+            ></path>
+          </g>
+        </g>
+      </svg>
+      <div class="legends">
+        <div class="pink">
+          <span></span>
+          <p>Розовый сегмент</p>
+        </div>
+        <div class="green">
+          <span></span>
+          <p>Зеленый сегмент</p>
+        </div>
+        <div class="grey">
+          <span></span>
+          <p>Серый сегмент</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

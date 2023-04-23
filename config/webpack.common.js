@@ -1,8 +1,8 @@
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const paths = require('./paths')
+const paths = require('./paths');
 
 module.exports = {
   // Where webpack looks to start building the bundle
@@ -39,7 +39,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'webpack Boilerplate',
       favicon: paths.src + '/images/favicon.png',
-      template: paths.src + '/template.html', // template file
+      template: paths.src + '/index.html', // template file
       filename: 'index.html', // output file
     }),
   ],
@@ -66,4 +66,4 @@ module.exports = {
       assets: paths.public,
     },
   },
-}
+};

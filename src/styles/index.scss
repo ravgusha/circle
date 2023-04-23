@@ -1,20 +1,66 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter.ttf');
+  font-family: 'GHEA Grapalat';
+  src: url('../fonts/GHEAGrapalat.woff') format('woff'),
+    url('../fonts/GHEAGrapalat.ttf') format('truetype'),
+    url('../fonts/GHEAGrapalat.svg#GHEAGrapalat') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-svg {
-  transform: rotate(-30deg);
+:root {
+  --pink: #ff69b4;
+  --green: #97bb31;
+  --grey: #d9d9d9;
 }
 
-.pink:hover {
-  fill: #cc5490;
-}
+.wrapper {
+  font-family: 'GHEA Grapalat';
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 
-.grey:hover {
-  fill: #b4b4b4;
-}
+  .pie path:hover {
+    filter: brightness(50%);
+  }
 
-.green:hover {
-  fill: #81a129;
+  .legends {
+    color: grey;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+
+      p {
+        text-transform: uppercase;
+      }
+
+      span {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    .active {
+      text-decoration: underline;
+      text-underline-offset: 6px;
+      color: #000;
+    }
+
+    .pink span {
+      background-color: var(--pink);
+    }
+
+    .green span {
+      background-color: var(--green);
+    }
+
+    .grey span {
+      background-color: var(--grey);
+    }
+  }
 }
